@@ -1,0 +1,26 @@
+{
+  "name": "@qmoosa/lending-dashboard",
+  "version": "1.0.0",
+  "description": "Decentralized Lending & Borrowing Dashboard — Web4 console, health factor telemetry & wallet connector",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/dashboard.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "lending",
+    "dashboard",
+    "web4",
+    "telemetry"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}

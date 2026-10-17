@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qmoosa Lending & Borrowing Console</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 2rem; }
+    .card { background: #1e293b; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; border: 1px solid #334155; }
+    .gauge { display: inline-block; padding: 0.5rem 1rem; border-radius: 9999px; font-weight: bold; }
+    .gauge.SAFE { background: #065f46; color: #34d399; }
+    .gauge.MODERATE { background: #854d0e; color: #fde047; }
+    .gauge.CRITICAL { background: #991b1b; color: #f87171; }
+    .gauge.LIQUIDATABLE { background: #7f1d1d; color: #fca5a5; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    button { background: #3b82f6; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; }
+    button:hover { background: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>⚡ QMOOSA LENDING & LIQUIDITY CONSOLE</h1>
+    <p>Decentralized Over-Collateralized Money Market — Qmoosa 1,000 Software Ecosystem</p>
+    <button id="btn-connect">Connect Wallet</button>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>User Health Factor</h3>
+      <div id="hf-badge" class="gauge SAFE">HF: 2.45 (SAFE)</div>
+      <p>Liquidation threshold: &lt; 1.00</p>
+    </div>
+    <div class="card">
+      <h3>Total Collateral Supplied</h3>
+      <h2 id="total-collateral">$50,000.00</h2>
+    </div>
+    <div class="card">
+      <h3>Total Active Debt</h3>
+      <h2 id="total-debt">$18,400.00</h2>
+    </div>
+  </div>
+</body>
+</html>
